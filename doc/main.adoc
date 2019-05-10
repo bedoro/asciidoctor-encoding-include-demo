@@ -1,0 +1,17 @@
+== Including files with CP1252
+
+=== CP1252 with no special characters
+Below, we include a `.java`-file that is encoded using CP1252 that does not contain any special characters:
+
+[source, java]
+----
+include::./includes/MyClass1.java[]
+----
+
+=== CP1252 with special characters
+Now, let's try including a CP1252 file with ä, ö and ü. This should break the build.
+
+[source, java]
+----
+include::./includes/MyClass2.java[]
+----
